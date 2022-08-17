@@ -23,6 +23,9 @@ async function getData(e) {
       return res.json();
     })
     .then((data) => {
-      data && console.log(data[0].meanings[0].definitions[0].definition);
+      data &&
+        console.log(
+          word + " : " + data[0].meanings[0].definitions[0].definition
+        );
     });
 }
