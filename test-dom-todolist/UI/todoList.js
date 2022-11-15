@@ -10,11 +10,9 @@ function todoUserInterface() {
     newP.innerText = newDescription;
 
     const doneBtn = document.createElement("button");
-    doneBtn.setAttribute("id", "doneBtn" + newId);
     doneBtn.innerText = "done";
 
     const removeBtn = document.createElement("button");
-    removeBtn.setAttribute("id", "removeBtn" + newId);
     removeBtn.innerText = "remove";
 
     newTodo.appendChild(newP);
