@@ -11,9 +11,6 @@ class Todo {
   setDescription(newDescription) {
     this.description = newDescription;
   }
-  setDone() {
-    this.done = true;
-  }
 }
 // module.exports = Todo;
 export default Todo;

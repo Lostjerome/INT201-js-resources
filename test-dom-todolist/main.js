@@ -31,10 +31,7 @@ addTodoButton.addEventListener("click", () => {
     const removeBtn = todoItem.children[2];
     removeBtn.addEventListener("click", () => {
       removeTodo(id);
-
       todoItem.remove();
-      console.log("remove todo with id: " + id);
-
       refreshDoneCounter();
     });
 
@@ -50,7 +47,6 @@ addTodoButton.addEventListener("click", () => {
         todoItemDescription.style.textDecoration = "none";
         todoItemDescription.style.opacity = "1";
       }
-      // console.log("done todo with id: " + id);
 
       refreshDoneCounter();
     });
@@ -65,5 +61,4 @@ refreshDoneCounter();
 function refreshDoneCounter() {
   showNumberOfDone(getNumberOfDone());
   showNumberOfNotDone(getNumberOfNotDone());
-//   console.log(getTodos());
 }
