@@ -1,6 +1,6 @@
-// const Todo = require("./todo.js");
+const Todo = require("./todo.js");
 
-import Todo from "./todo.js";
+// import Todo from "./todo.js";
 
 function todoManagement() {
   let todos = [];
@@ -34,5 +34,5 @@ function todoManagement() {
     getNumberOfNotDone,
   };
 }
-// module.exports = todoManagement;
-export default todoManagement;
+module.exports = todoManagement;
+// export default todoManagement;

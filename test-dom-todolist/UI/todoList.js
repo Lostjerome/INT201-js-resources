@@ -6,30 +6,29 @@ function todoUserInterface() {
     newTodo.setAttribute("id", newId);
     newTodo.setAttribute("class", "todoItem");
 
-    const newP = document.createElement("p");
+    const newP = document.createElement("P");
     newP.innerText = newDescription;
 
     const doneBtn = document.createElement("button");
-    doneBtn.innerText = "done";
+    doneBtn.innerText = "Not Done";
 
     const removeBtn = document.createElement("button");
     removeBtn.innerText = "remove";
+    listTodo.appendChild(newTodo);
 
     newTodo.appendChild(newP);
     newTodo.appendChild(doneBtn);
     newTodo.appendChild(removeBtn);
-
-    listTodo.appendChild(newTodo);
   }
   function showNumberOfDone(numberOfDone) {
     const numberOfDoneSpan = document.getElementById("done");
-    numberOfDoneSpan.innerText = "Number of Done:" + numberOfDone;
+    numberOfDoneSpan.textContent = "Number of Done:" + numberOfDone;
   }
   function showNumberOfNotDone(numberOfNotDone) {
     const numberOfNotDoneSpan = document.getElementById("notDone");
-    numberOfNotDoneSpan.innerText = "Number of Not Done:" + numberOfNotDone;
+    numberOfNotDoneSpan.textContent = "Number of Not Done:" + numberOfNotDone;
   }
   return { showTodoItem, showNumberOfDone, showNumberOfNotDone };
 }
-// module.exports = todoUserInterface
-export default todoUserInterface;
+module.exports = todoUserInterface;
+// export default todoUserInterface;

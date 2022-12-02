@@ -39,11 +39,11 @@ addTodoButton.addEventListener("click", () => {
       findTodo(id).done = !findTodo(id).done;
       const todoItemDescription = todoItem.children[0];
       if (findTodo(id).done) {
-        doneBtn.innerHTML = "undone";
+        doneBtn.textContent = "undone";
         todoItemDescription.style.textDecoration = "line-through";
         todoItemDescription.style.opacity = "0.3";
       } else {
-        doneBtn.innerHTML = "done";
+        doneBtn.textContent = "done";
         todoItemDescription.style.textDecoration = "none";
         todoItemDescription.style.opacity = "1";
       }
