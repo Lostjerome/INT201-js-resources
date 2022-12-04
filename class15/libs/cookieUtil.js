@@ -1,4 +1,4 @@
-export class CookieUtil {
+class CookieUtil {
   static get(name) {
     console.log(`all cookies: ${document.cookie}`);
     let cookieName = `${encodeURIComponent(name)}=`,
@@ -37,3 +37,5 @@ export class CookieUtil {
     CookieUtil.set(name, "", new Date(0));
   }
 }
+
+export { CookieUtil };

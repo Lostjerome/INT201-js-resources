@@ -1,11 +1,12 @@
-const Todo = require("./todo.js");
+// const Todo = require("./todo.js");
 
-// import Todo from "./todo.js";
+import Todo from "./todo.js";
 
 function todoManagement() {
   let todos = [];
-  function addTodo(desc) {
+  function addTodo(desc, done = false) {
     const newTodo = new Todo(desc);
+    newTodo.done = done;
     todos.push(newTodo);
     return newTodo.id;
   }
@@ -34,5 +35,5 @@ function todoManagement() {
     getNumberOfNotDone,
   };
 }
-module.exports = todoManagement;
-// export default todoManagement;
+// module.exports = todoManagement;
+export default todoManagement;

@@ -12,5 +12,5 @@ class Todo {
     this.description = newDescription;
   }
 }
-module.exports = Todo;
-// export default Todo;
+// module.exports = Todo;
+export default Todo;
